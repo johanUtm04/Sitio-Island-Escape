@@ -24,7 +24,15 @@ const handleDownloadClick = () => {
           onClick={handleDownloadClick}
           >
           DESCARGAR
-          </button>    
+          </button>   
+          <div>
+          <p className='paragraph-hero'> 
+          Adéntrate en la intensa acción de Island Escape, un emocionante juego <br /> 
+          donde un comando de élite debe sobrevivir y escapar de una isla infestada de enemigos. <br />
+          Con armamento pesado y la jungla como tu única aliada,<br />
+          cada misión es un pulso por la supervivencia.  
+          </p> 
+          </div> 
           </div>
       <div className="hero-logo-box">
         <img src={logo} alt="Island Escape Logo" className="logo" />

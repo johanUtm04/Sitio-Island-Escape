@@ -31,7 +31,7 @@ function Download() {
                     </div>
                     <div className="metadata-row">
                         <span className="metadata-label">Publicado por:</span>
-                        <span className="metadata-value link-style">TuNombreDev</span>
+                        <span className="metadata-value link-style">NexusTech</span>
                     </div>
                     <div className="metadata-row">
                         <span className="metadata-label">Comentarios:</span>
@@ -60,7 +60,7 @@ function Download() {
             
             <div className="section-divider">
                 <hr className="divider-line" />
-                <span className="divider-text">ANDROID / APK</span>
+                <span className="divider-text">Guía Móvil (Apk) + tips de juego</span>
                 <hr className="divider-line" />
             </div>
 
@@ -91,7 +91,7 @@ function Download() {
                         <li>**Tip de Combate:** Usa el sigilo en la jungla; el ruido atrae grupos grandes.</li>
                         <li>**Recursos:** Prioriza el agua embotellada y las baterías para el visor nocturno.</li>
                         <li>**Movilidad:** La tirolesa desbloquea rutas rápidas de escape y emboscada.</li>
-                        <li>**Logística:** Gestiona tu inventario con sabiduría, solo puedes llevar 3 armas principales.</li>
+                        <li>**Recuerda, no olvides el prototipo de energía:**</li>
                     </ul>
                 </div>
             </div>

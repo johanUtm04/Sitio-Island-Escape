@@ -11,23 +11,24 @@ const CHARACTERS_DATA =
     name: 'JOJO', 
     imgSrc: charImage1, 
     description: 'Un linaje de héroes con un destino bizarro, los Joestar se enfrentan a fuerzas oscuras a través de generaciones.',
-    details: [{ label: 'Clase', value: 'Guerrero' }, { label: 'Raza', value: 'Humano' }, { label: 'Afiliación', value: 'Norte' }]
+    details: [
+      { label: 'Rango', value: 'Guerrero' }, 
+      { label: 'Misiones', value: '10 victorias' }, 
+      { label: 'Afiliación', value: 'Army' }
+    ]
   },
   { 
     id: 2, 
     name: 'Aztaroths', 
     imgSrc: charImage2, 
     description: 'Malvados soldados alienígenas que tratan de acabar con JOJO. Son muy fuertes y suelen ir en grupo, será mejor no toparse con ellos.',
-    details: [{ label: 'Monstruo', value: 'Mago' }, { label: 'Raza', value: 'Elfo' }, { label: 'Afiliación', value: 'Sur' }]
-  },
-  { 
-    id: 3, 
-    name: 'AztaBoss', 
-    imgSrc: charImage3, 
-    description: 'Señor y dueño de los Aztaroths. Es conocido por su gran fuerza, pero sobre todo por su maldad desmesurada, incluso contra los suyos.',
-    details: [{ label: 'Clase', value: 'Pícaro' }, { label: 'Raza', value: 'Enano' }, { label: 'Afiliación', value: 'Oeste' }]
+    details: [
+      { label: 'Misión', value: 'Conquistar el mundo' }, 
+      { label: 'Clase de enemigo', value: 'Malvado, agresivo' }, 
+      { label: 'Afiliación', value: 'Cobra' }
+    ]
   }
-]
+];
 
 function CharacterCard({ character }) {
   return (

@@ -9,6 +9,7 @@ import Community from './components/Community';
 import Download from './components/Download';
 import Contact from './components/Contact';
 import History from './components/History';
+import About from './components/About';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -31,6 +32,7 @@ function App() {
             <Route path="/comunidad" element={<Community />} /> 
             <Route path="/contacto" element={<Contact />} /> 
             <Route path="/historia" element={<History />} /> 
+            <Route path="/acerca" element={<About />} /> 
         </Routes>
         <Footer />
       </div>
