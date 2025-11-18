@@ -1,5 +1,5 @@
 import gameCoverImage from '../assets/boxart3.jpg'; 
-import mobileLogoUrl from '../assets/mobile_app_logo.jpg';
+import mobileLogoUrl from '../assets/mobile_app_logo.png';
 import '../css/Download.css';
 
 function Download() {

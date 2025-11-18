@@ -1,3 +1,5 @@
+/* Sección principal 
+*/
 body {
     margin: 0;
     font-family: 'Inter', Arial, sans-serif;
@@ -15,6 +17,8 @@ html {
     box-shadow: none;
     color: #e0e0e0;
 }
+/* Header/Navegación 
+*/
 .header {
     background-color: #090909; 
     color: white;
@@ -51,6 +55,9 @@ html {
     text-shadow: 0 0 10px rgba(0, 255, 100, 0.8);
     transform: scale(1.05);
 }
+
+/* Sección Hero 
+*/
 .hero-section {
     position: relative;
     display: flex;
@@ -76,9 +83,19 @@ html {
 .hero-content {
     position: relative;
     z-index: 100; 
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; -> ELIMINADO para juntar el contenido */
     padding: 10px;
 }
+
+/* NUEVA CLASE PARA EL PÁRRAFO CENTRADO */
+.centered-hero-paragraph-container {
+    position: relative;
+    z-index: 100;
+    width: 100%; /* Ocupa todo el ancho disponible del padding de .hero-section */
+    text-align: center; /* Centra el contenido (el párrafo) */
+    margin-bottom: 30px; /* Separación del título */
+}
+
 .hero-title {
     background-color: transparent;
     padding: 12px 18px;
@@ -101,12 +118,15 @@ html {
 .paragraph-hero{
     font-weight: 600;
     color: #ffc400;
-    margin: 20px 0 30px 0;
+    /* Ajustes para el centrado: se centrará dentro del nuevo contenedor */
+    margin: 20px auto 0 auto; 
     font-size: 1.1em;
     line-height: 1.6;
     text-shadow: 0 0 5px rgba(255, 196, 0, 0.4);
-    max-width: 600px;
+    max-width: 600px; /* Limita el ancho del texto */
+    display: block; /* Asegura que el margin: auto funcione */
 }
+
 .download-button {
     position: relative; 
     margin-top: 30px; 
@@ -162,6 +182,9 @@ html {
     width: 120px;
     height: 180px;
 }
+
+/* Secciones de Contenido 
+*/
 .news-section, .characters-section {
     padding: 0 100px; 
     margin-bottom: 70px;
@@ -212,6 +235,9 @@ html {
     width: 60%;
     margin: 15px 20px 25px 20px;
 }
+
+/* Footer
+*/
 .footer {
     background-color: #090909;
     color: #888;
@@ -219,84 +245,6 @@ html {
     padding: 25px 0;
     border-top: 5px solid #00ff66;
     font-size: 0.9em;
-}
-@media (max-width: 1024px) {
-    .hero-section {
-        padding: 50px 50px;
-        min-height: 300px;
-    }
-    .hero-logo-box {
-        right: 50px;
-    }
-    .news-section, .characters-section {
-        padding: 0 50px;
-    }
-}
-@media (max-width: 768px) {
-    .hero-section {
-        padding: 30px 20px;
-        min-height: 250px;
-        align-items: center;
-        text-align: center;
-    }
-    .hero-title {
-        font-size: 2.2em;
-        text-align: center;
-        margin: 0 auto;
-        padding: 8px 15px;
-        letter-spacing: 2px;
-    }
-    .paragraph-hero {
-        margin: 15px auto 25px auto; 
-        font-size: 1em;
-        line-height: 1.5;
-        max-width: 90%; 
-        text-align: center; 
-    }
-    .hero-content {
-        background-color: rgba(0, 0, 0, 0.6);
-    }
-    .download-button {
-        display: block;
-        margin: 15px auto 0 auto;
-        padding: 12px 30px;
-        font-size: 1.1em;
-    }
-    .hero-logo-box {
-        display: none; 
-    }
-    .nav-menu {
-        font-size: 0.8em;
-        justify-content: flex-start;
-        padding: 10px;
-    }
-    .news-section, .characters-section {
-        padding: 0 20px;
-    }
-    .section-title {
-        font-size: 1.8em;
-        margin-top: 30px;
-    }
-    .news-container {
-        gap: 25px;
-    }
-}
-@media (max-width: 480px) {
-    .hero-section {
-        padding: 20px 10px;
-        min-height: 200px;
-    }
-    .hero-title {
-        font-size: 1.8em;
-        border-width: 2px;
-    }
-    .download-button {
-        padding: 10px 20px;
-        font-size: 1em;
-    }
-    .nav-menu a {
-        margin: 0 10px;
-    }
 }
 .footer-command-terminal {
     background-color: #050505;
@@ -339,6 +287,97 @@ html {
 .footer-copyright {
     color: #444;
     font-size: 0.8em;
+}
+
+/* Media Queries (Responsivo) 
+*/
+@media (max-width: 1024px) {
+    .hero-section {
+        padding: 50px 50px;
+        min-height: 300px;
+    }
+    .hero-logo-box {
+        right: 50px;
+    }
+    .news-section, .characters-section {
+        padding: 0 50px;
+    }
+}
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 30px 20px;
+        min-height: 250px;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-title {
+        font-size: 2.2em;
+        text-align: center;
+        margin: 0 auto;
+        padding: 8px 15px;
+        letter-spacing: 2px;
+    }
+    .download-button {
+        display: block;
+        margin: 15px auto 0 auto;
+        padding: 12px 30px;
+        font-size: 1.1em;
+    }
+    .hero-content {
+        /* Para que el título y botón se mantengan centrados */
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .centered-hero-paragraph-container {
+        /* Se alinea automáticamente por el text-align: center; */
+        width: 100%;
+        padding: 0 10px;
+    }
+    .paragraph-hero {
+        margin: 15px auto 25px auto; 
+        font-size: 1em;
+        line-height: 1.5;
+        max-width: 90%; 
+        text-align: center; 
+    }
+    .hero-logo-box {
+        display: none; 
+    }
+    .nav-menu {
+        font-size: 0.8em;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+    .news-section, .characters-section {
+        padding: 0 20px;
+    }
+    .section-title {
+        font-size: 1.8em;
+        margin-top: 30px;
+    }
+    .news-container {
+        gap: 25px;
+    }
+}
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 20px 10px;
+        min-height: 200px;
+    }
+    .hero-title {
+        font-size: 1.8em;
+        border-width: 2px;
+    }
+    .download-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+    .nav-menu a {
+        margin: 0 10px;
+    }
 }
 @media (max-width: 600px) {
     .footer-command-terminal {

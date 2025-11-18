@@ -1,55 +1,85 @@
+import { Link } from "react-router-dom";
 import '../css/History.css';
 
 function History() {
+
     const historyData = [
-    { type: 'ID EXPEDIENTE', value: 'ISL-ESC-007A' },
-    { type: 'CLASIFICACIÓN', value: 'ULTRA SECRETO / AZTAROTH' },
-    { type: 'FECHA DE CREACIÓN', value: '25 JUN 1988' },
-    { type: 'EVENTO PRINCIPAL', value: 'INTRUSIÓN NO IDENTIFICADA (INI-001)' },
-  ];
+        { type: 'ID EXPEDIENTE', value: 'HNT-OPS-021X' },
+        { type: 'CLASIFICACIÓN', value: 'ULTRA SECRETO' },
+        { type: 'FECHA DE ACTIVACIÓN', value: '03 FEB 2025' },
+        { type: 'OPERATIVO ASIGNADO', value: 'SOLDADO HUNTER' },
+        { type: 'UBICACIÓN', value: 'ISLA SIN NOMBRE / MAR ÍNDICO' },
+    ];
 
-  const storyParagraphs = [
-    { key: 1, text: 'El año era 1988. La isla, un punto insignificante en el Pacífico Sur, era utilizada como un discreto puesto de avanzada militar, clave para la vigilancia regional. Todo cambió con un pulso electromagnético masivo que dejó la base en tinieblas.' },
-    { key: 2, text: 'Minutos después del pulso, se registraron ecos no humanos. Criaturas conocidas ahora como Aztaroths emergieron de la densa jungla. Su objetivo no era la destrucción, sino la *obtención* de una tecnología olvidada, oculta bajo las ruinas de un templo precolombino.' },
-    { key: 3, text: 'El Sargento Plua Rocca, el único superviviente del asalto inicial, se convirtió en el último recurso de la humanidad. Su misión no es evacuar, sino asegurar que el Expediente Cero—la clave para repeler la invasión—no caiga en manos de los Aztaroths. Ahora, la isla es un cementerio táctico donde la única ley es la supervivencia.' },
-  ];
+    const storyParagraphs = [
+        {
+            key: 1,
+            text:
+                'El Soldado Hunter fue enviado a una pequeña isla del Mar Índico tras confirmarse el descubrimiento del Núcleo Epsilon, un nuevo tipo de material energético capaz de generar enormes cantidades de potencia estable. La misión inicial consistía en evaluar y asegurar el prototipo.'
+        },
+        {
+            key: 2,
+            text:
+                'Sin embargo, al llegar, Hunter descubrió que la isla había sido ocupada por el Equipo Cobra, una organización paramilitar conocida por su brutalidad y por el desarrollo de armamento ilegal. Cobra capturó el prototipo y comenzó a usarlo para construir armas experimentales.'
+        },
+        {
+            key: 3,
+            text:
+                'Con las comunicaciones bloqueadas y sin refuerzos disponibles, Hunter quedó solo detrás de las líneas enemigas. Su misión ahora es recuperar el Núcleo Epsilon, neutralizar a las unidades de Cobra y evitar que el prototipo sea activado como arma definitiva.'
+        },
+        {
+            key: 4,
+            text:
+                'La isla, convertida en un complejo militar improvisado, está llena de puestos de vigilancia, patrullas armadas y zonas de investigación clandestinas. Cada paso pone a Hunter más cerca del laboratorio central… y del plan final de Cobra.'
+        },
+        {
+            key: 5,
+            text:
+                'El destino del Núcleo Epsilon, y quizá del equilibrio mundial, depende del éxito de la Operación Omega-021X.'
+        },
+    ];
 
-  return (
-    <section className="history-section" id="seccion-historia">
-      <h2 className="section-title">Expediente Clasificado: Orígenes</h2>
+    return (
+        <section className="history-section" id="seccion-historia">
+            <h2 className="section-title">Expediente Clasificado: Orígenes</h2>
 
-      <div className="dossier-container">
-        
-        <div className="terminal-log-box">
-          <h3 className="log-title">ESTADO: COMPROMETIDO</h3>
-          
-          {historyData.map((item, index) => (
-            <div key={index} className="log-entry">
-              <span className="log-type">{item.type}:</span>
-              <span className="log-value">{item.value}</span>
-            </div>
-          ))}
+            <div className="dossier-container">
+                
+                <div className="terminal-log-box">
+                    <h3 className="log-title">ESTADO: OPERACIÓN EN CURSO</h3>
 
-          <button className="download-dossier-button">
-            DESCARGAR ARCHIVO COMPLETO
-          </button>
-        </div>
+                    {historyData.map((item, index) => (
+                        <div key={index} className="log-entry">
+                            <span className="log-type">{item.type}:</span>
+                            <span className="log-value">{item.value}</span>
+                        </div>
+                    ))}
 
-        <div className="narrative-box">
-            <h3 className="narrative-title">REGISTRO DE INCIDENTE INI-001</h3>
-            <div className="narrative-text">
-                {storyParagraphs.map(p => (
-                    <p key={p.key}>{p.text}</p>
-                ))}
-                <div className="signature-line">
-                    <span className="signature-text">SGT. P. ROCCA / ÚLTIMO REPORTE</span>
+                    <Link to="/descargar">
+                        <button className="download-dossier-button">
+                            DESCARGAR ARCHIVO COMPLETO
+                        </button>
+                    </Link>
                 </div>
+
+                <div className="narrative-box">
+                    <h3 className="narrative-title">REGISTRO DE MISIÓN OMEGA-021X</h3>
+                    <div className="narrative-text">
+                        {storyParagraphs.map((p) => (
+                            <p key={p.key}>{p.text}</p>
+                        ))}
+
+                        <div className="signature-line">
+                            <span className="signature-text">
+                                OPERATIVO HUNTER / ÚLTIMO REPORTE
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-        
-      </div>
-    </section>
-  );
+        </section>
+    );
 }
 
 export default History;
