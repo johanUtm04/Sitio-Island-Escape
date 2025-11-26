@@ -1,15 +1,16 @@
 import './App.css'; 
+import { Suspense, lazy } from 'react';
+const Footer = lazy(() => import( './components/Footer'));
+const Header = lazy(() => import( './components/Header'));
 
-import Header from './components/Header';
-import Hero from './components/Hero';
-import News from './components/News';
-import Characters from './components/Characters';
-import Footer from './components/Footer';
-import Community from './components/Community';
+const Hero = lazy(() => import( './components/Hero'));
+const News = lazy(() => import( './components/News'));
+const Characters = lazy(() => import( './components/Characters'));
+const Community = lazy(() => import( './components/Community'));
 import Download from './components/Download';
-import Contact from './components/Contact';
-import History from './components/History';
-import About from './components/About';
+const Contact = lazy(() => import( './components/Contact'));
+const History = lazy(() => import( './components/History'));
+const About  = lazy(() => import( './components/About'));
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 

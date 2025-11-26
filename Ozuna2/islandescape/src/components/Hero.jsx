@@ -1,6 +1,6 @@
-import bannerImage from '../assets/banner.jpeg';
-import logo from '../assets/logo.png';
-import boxArt from '../assets/boxart.jpg';
+import bannerImage from '../assets/banner.webp';
+import logo from '../assets/logo.webp';
+import boxArt from '../assets/boxart.webp';
 import { useNavigate } from 'react-router-dom';
 
 function Hero() {
@@ -39,8 +39,8 @@ function Hero() {
       </div>
       
       <div className="hero-logo-box">
-        <img src={logo} alt="Island Escape Logo" className="logo" />
-        <img src={boxArt} alt="Island Escape Box Art" className="box-art" />
+        <img src={logo} alt="Island Escape Logo" className="logo" loading="lazy" />
+        <img src={boxArt} alt="Island Escape Box Art" className="box-art"loading="lazy" />
       </div>
     </section>
   );

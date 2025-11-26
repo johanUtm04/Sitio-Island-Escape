@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import charImage1 from '../assets/personaje1.png'; 
-import charImage2 from '../assets/personaje2.png'; 
-import charImage3 from '../assets/personaje3.png'; 
+import charImage1 from '../assets/personaje1.webp'; 
+import charImage2 from '../assets/personaje2.webp'; 
+import charImage3 from '../assets/personaje3.webp'; 
 import '../css/Character.css'; 
 
 const CHARACTERS_DATA = 

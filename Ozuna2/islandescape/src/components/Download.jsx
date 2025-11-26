@@ -1,5 +1,5 @@
-import gameCoverImage from '../assets/boxart3.jpg'; 
-import mobileLogoUrl from '../assets/mobile_app_logo.png';
+import gameCoverImage from '../assets/boxart3.webp'; 
+import mobileLogoUrl from '../assets/mobile_app_logo.webp';
 import '../css/Download.css';
 
 function Download() {
@@ -16,7 +16,7 @@ function Download() {
             </h1>
             <div className="game-content-container">
                 <div className="image-column">
-                    <img src={gameCoverImage} alt="Carátula de Island Escape" className="game-cover-image" />
+                    <img src={gameCoverImage} alt="Carátula de Island Escape" className="game-cover-image" loading="lazy" />
                 </div>
                 <div className="info-column">
                     <div className="metadata-row">
@@ -69,7 +69,7 @@ function Download() {
             </h1>
             <div className="game-content-container">
                 <div className="image-column mobile-image-column">
-                    <img src={mobileLogoUrl} alt="Logo de Descarga Móvil" className="mobile-logo-image" />
+                    <img src={mobileLogoUrl} alt="Logo de Descarga Móvil" className="mobile-logo-image" loading="lazy"/>
                     <p className="mobile-note">Optimizado para dispositivos de alta gama. Requiere Android 10+.</p>
                 </div>
                 <div className="info-column">

@@ -1,6 +1,6 @@
-import news1 from '../assets/news_1.jpg';
-import news2 from '../assets/news_2.jpg';
-import news3 from '../assets/news_3.jpg';
+import news1 from '../assets/news_1.webp';
+import news2 from '../assets/news_2.webp';
+import news3 from '../assets/news_3.webp';
 
 function NewsItem({ imageSrc }) {
   return (
@@ -18,9 +18,9 @@ function News() {
     <section className="news-section">
       <h2 className="section-title">Noticias</h2>
       <div className="news-container">
-        <NewsItem imageSrc={news1} />
-        <NewsItem imageSrc={news2} />
-        <NewsItem imageSrc={news3} />
+        <NewsItem imageSrc={news1} loading="lazy"/>
+        <NewsItem imageSrc={news2} loading="lazy"/>
+        <NewsItem imageSrc={news3} loading="lazy" />
       </div>
     </section>
   );
