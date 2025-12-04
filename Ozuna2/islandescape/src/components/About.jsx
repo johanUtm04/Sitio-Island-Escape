@@ -30,9 +30,29 @@ function About() {
 
       <div className="team-container">
 
+ {/* Juan Alberto Zavala Medina */}
+        <div className="team-member">
+          <img src={albertoFoto} className="member-image" alt="Juan Alberto Zavala Medina" />
+          <h4 className="member-name">Juan Alberto Zavala Medina</h4>
+          <p className="member-role">Jefe de Proyecto</p>
+          <p className="member-desc">
+            Encargado del diseño, arquitectura y lógica del proyecto.
+          </p>
+        </div>
+
+        {/* Luis Eduardo García San Juan */}
+        <div className="team-member">
+          <img src={wichoFoto} className="member-image" alt="Luis Eduardo Garcia San Juan" />
+          <h4 className="member-name">Luis Eduardo Garcia San Juan</h4>
+          <p className="member-role">Diseño UI/UX</p>
+          <p className="member-desc">
+            Diseñador del estilo visual e interfaz del videojuego.
+          </p>
+        </div>
+        
         {/* Luis Enrique Ibarra Avalos */}
         <div className="team-member">
-          <img src={albertoFoto} className="member-image" alt="Luis Enrique Ibarra Avalos" />
+          <img src={wichitoFoto} className="member-image" alt="Luis Enrique Ibarra Avalos" />
           <h4 className="member-name">Luis Enrique Ibarra Avalos</h4>
           <p className="member-role">Programador Backend</p>
           <p className="member-desc">
@@ -50,25 +70,7 @@ function About() {
           </p>
         </div>
 
-        {/* Juan Alberto Zavala Medina */}
-        <div className="team-member">
-          <img src={wichoFoto} className="member-image" alt="Juan Alberto Zavala Medina" />
-          <h4 className="member-name">Juan Alberto Zavala Medina</h4>
-          <p className="member-role">Jefe de Proyecto</p>
-          <p className="member-desc">
-            Encargado del diseño, arquitectura y lógica del proyecto.
-          </p>
-        </div>
-
-        {/* Luis Eduardo García San Juan */}
-        <div className="team-member">
-          <img src={wichitoFoto} className="member-image" alt="Luis Eduardo Garcia San Juan" />
-          <h4 className="member-name">Luis Eduardo Garcia San Juan</h4>
-          <p className="member-role">Diseño UI/UX</p>
-          <p className="member-desc">
-            Diseñador del estilo visual e interfaz del videojuego.
-          </p>
-        </div>
+       
 
       </div>
     </section>
