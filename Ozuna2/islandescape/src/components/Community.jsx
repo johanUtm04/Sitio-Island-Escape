@@ -51,7 +51,7 @@ function Community() {
           </div>
           
           <div className="streamer-info">
-            <span className="live-indicator">LIVE</span>
+            <span className="live-indicator">Video</span>
             <span className="streamer-name">
               Canal de Youtube 📹: <a href="#streamer-link">GuerreroNeón</a>
             </span>
