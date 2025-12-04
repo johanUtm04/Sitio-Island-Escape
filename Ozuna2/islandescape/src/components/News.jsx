@@ -1,6 +1,7 @@
-import news1 from '../assets/news_1.webp';
+import news1 from '../assets/news_1.jpg';
 import news2 from '../assets/news_2.webp';
 import news3 from '../assets/news_3.webp';
+import '../css/News.css'; // ⬅️ Importa los estilos recomendados
 
 function NewsItem({ imageSrc, title, description }) {
   return (
@@ -45,41 +46,3 @@ function News() {
 }
 
 export default News;
-<style>
-{`
-.news-item {
-  padding: 15px;
-  background: #0f0f0f;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 255, 90, 0.15);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.news-image {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 12px;
-}
-
-.news-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #92e78a;
-  margin-bottom: 6px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.news-description {
-  font-size: 0.95rem;
-  color: #d4d4d4;
-  text-align: justify;
-  line-height: 1.6;
-}
-
-.news-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 18px rgba(0, 255, 90, 0.25);
-}
-`}
-</style>
