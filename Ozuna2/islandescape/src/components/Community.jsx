@@ -15,24 +15,11 @@ function Community() {
     <section className="community-section" id="seccion-comunidad">
       <h2 className="section-title">Comunidad: El Frente de Batalla</h2>
 
+      {/* GRID RESPONSIVO */}
       <div className="community-grid">
 
-        {/* --- DISCORD WIDGET --- */}
-        <div className="discord-widget-box">
-          <h3 className="widget-title">Únete a la Base de Operaciones</h3>
-          <p className="widget-subtitle">Conéctate con otros supervivientes y coordina tu próxima misión.</p>
-          
-          <div className="discord-iframe-placeholder">
-            <p>Widget de Discord aquí (Chats, Miembros, etc.)</p>
-          </div>
-          
-          <button className="discord-join-button">
-            ACCESO INMEDIATO AL DISCORD
-          </button>
-        </div>
-
-        {/* --- LIVE GAMEPLAY BOX --- */}
-        <div className="live-feed-box">
+       {/* --- LIVE GAMEPLAY BOX --- */}
+        <div className="live-feed-box card-responsive">
           <h3 className="widget-title live-title" style={{ color: "#92e78aff" }}>
             🎮 Gameplay demostrativo de Island Escape
           </h3>
@@ -58,6 +45,21 @@ function Community() {
           </div>
         </div>
 
+        {/* --- DISCORD WIDGET --- */}
+        <div className="discord-widget-box card-responsive">
+          <h3 className="widget-title">Únete a la Base de Operaciones</h3>
+          <p className="widget-subtitle">Conéctate con otros supervivientes y coordina tu próxima misión.</p>
+          
+          <div className="discord-iframe-placeholder">
+            <p>Widget de Discord aquí (Chats, Miembros, etc.)</p>
+          </div>
+          
+          <button className="discord-join-button">
+            ACCESO INMEDIATO AL DISCORD
+          </button>
+        </div>
+
+       
       </div>
 
     </section>

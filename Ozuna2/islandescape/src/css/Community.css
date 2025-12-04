@@ -178,3 +178,77 @@
         width: 15%;
     }
 }
+/* GRID PRINCIPAL */
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* CARDS BASE */
+.card-responsive {
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(0,255,120,0.35);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,255,120,0.2);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card-responsive:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 18px rgba(0,255,120,0.45);
+}
+
+/* VIDEO */
+.live-stream-placeholder {
+  width: 100%;
+  height: auto;
+}
+
+.live-stream-gif {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE — TABLETS */
+@media (max-width: 992px) {
+  .community-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-responsive {
+    padding: 18px;
+  }
+}
+
+/* RESPONSIVE — MÓVILES */
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .widget-title {
+    font-size: 1.15rem;
+    text-align: center;
+  }
+
+  .widget-subtitle {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .discord-join-button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .streamer-info {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+}
