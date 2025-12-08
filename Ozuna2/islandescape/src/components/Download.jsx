@@ -137,14 +137,15 @@ function Download() {
 
         {/* BOTÓN DESCARGA APK */}
         <div className="action-buttons-container">
-          <a
-            href="https://download938.mediafire.com/bmisgkp9f3qgk_3ZRACHrW1fznA2YZQdrjBPIW2XlHrFY_hWC9Nf1qrQjyT5e-WRj5Ayqk3jLzd1tgZJh4nbXzIKIS9ew-H_PDCSnN9G7bsMMWYeGmqngQIRCCTbML6ESy--OM0Xbgi5EQf1QoSGoyUZWAry4IdGHmjJIZ0VB1-Ugkc/zmjp0fpwk06jf8q/app-debug+%282%29.apk"
-            className="download-btn"
-            download
-          >
-            DESCARGAR AQUÍ (APK)
-          </a>
-        </div>
+  <a
+    href="/downloads/island-escape.apk"
+    className="download-btn"
+    download
+  >
+    DESCARGAR AQUÍ (APK)
+  </a>
+</div>
+
       </section>
     </div>
   );
